@@ -1,11 +1,64 @@
-# Churn Prediction (bancário) — variação KKBox
+# Churn Prediction (Banking Variation – KKBox Dataset)
 
-- **Resultado:** 71% de recall (priorizando retenção).
-- **O que tem aqui:** 1 notebook (`notebooks/vFinal_case_datamaster.ipynb`).
-- **Dados:** uso do dataset público do KKBox (não incluído no repo).
-- **Estrutura de Pastas:** crie a estrutura de pastas conforme notebook e cole os datasets na pasta data
-- **Link dos dados:** https://www.kaggle.com/datasets/gcenachi/case-data-master-2024
-- **Como rodar:** abra o notebook no Colab e execute; não é preciso baixar dados proprietários.
-- **Objetivo:** mostrar abordagem e métrica alinhadas à retenção (recall).
+## Overview
+This project implements a complete churn-prediction workflow using the public KKBox dataset.  
+It includes preprocessing, feature engineering, modeling, evaluation, and visual analysis in a single Jupyter Notebook.
 
-Licença: MIT.
+## Key Results
+- Recall (retention-oriented): **71%**
+- Precision: optimized for cost–benefit strategy  
+- Final Model: **Gradient Boosting with custom feature engineering**
+
+## Repository Structure
+
+````text
+project/
+│
+├── notebooks/
+│   └── vFinal_case_datamaster.ipynb     # Full notebook with analysis and modeling
+│
+├── data/                                # Place KKBox datasets here (not included in the repo)
+│   ├── members.csv
+│   ├── transactions.csv
+│   ├── user_logs.csv
+│   └── sample_submission.csv
+│
+├── reports/
+│   └── figures/                         # Generated charts and outputs
+│
+├── README.md
+└── LICENSE
+````
+
+## How to Run
+1. Download the KKBox datasets and place them in the folder `data/`.  
+2. Open the notebook:
+
+```bash
+notebooks/vFinal_case_datamaster.ipynb
+```
+
+3. Run all notebook cells sequentially (Google Colab recommended).
+
+## Dataset Source
+KKBox Churn Dataset:  
+https://www.kaggle.com/datasets/gescobar/kkbox-churn-prediction-challenge
+
+## Objective
+Demonstrate a complete workflow for churn prediction with emphasis on:
+- High recall for retention  
+- Interpretability of main drivers  
+- Practical feature engineering  
+- Realistic modeling aligned with business KPIs  
+
+## Notebook Contents
+- Data loading and cleaning  
+- Exploratory data analysis  
+- Custom feature engineering  
+- Gradient Boosting modeling  
+- Cross-validation  
+- Evaluation metrics  
+- Final insights and recommendations  
+
+## License
+MIT License.
