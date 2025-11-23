@@ -42,7 +42,7 @@ notebooks/vFinal_case_datamaster.ipynb
 
 ## Dataset Source
 KKBox Churn Dataset:  
-https://www.kaggle.com/datasets/gescobar/kkbox-churn-prediction-challenge
+https://www.kaggle.com/datasets/gcenachi/case-data-master-2024
 
 ## Objective
 Demonstrate a complete workflow for churn prediction with emphasis on:
