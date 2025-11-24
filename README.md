@@ -1,8 +1,8 @@
 # Churn Prediction (Banking Variation – KKBox Dataset)
 
 ## Overview
-This project implements a complete churn-prediction workflow using the public KKBox dataset.  
-It includes preprocessing, feature engineering, modeling, evaluation, and visual analysis in a single Jupyter Notebook.
+This project delivers a full churn-prediction pipeline built on the KKBox dataset.
+The notebook covers data ingestion, memory-efficient processing, exploratory analysis, custom feature engineering, model training with XGBoost, and performance evaluation — all structured for a real business-oriented retention scenario.
 
 ## Key Results
 - Recall (retention-oriented): **71%**
@@ -12,53 +12,63 @@ It includes preprocessing, feature engineering, modeling, evaluation, and visual
 ## Repository Structure
 
 ````text
-project/
-│
-├── notebooks/
-│   └── vFinal_case_datamaster.ipynb     # Full notebook with analysis and modeling
-│
-├── data/                                # Place KKBox datasets here (not included in the repo)
-│   ├── members.csv
-│   ├── transactions.csv
-│   ├── user_logs.csv
-│   └── sample_submission.csv
-│
-├── reports/
-│   └── figures/                         # Generated charts and outputs
-│
-├── README.md
-└── LICENSE
+notebooks/
+├── vFinal_case_datamaster.ipynb
+
+data/                          # Place KKBox datasets here (not included)
+├── members.csv
+├── transactions.csv
+├── user_logs.csv
+
+reports/
+└── figures/                   # Generated charts and outputs
+
+README.md
+LICENSE
+
 ````
 
 ## How to Run
-1. Download the KKBox datasets and place them in the folder `data/`.  
-2. Open the notebook:
 
+This project is designed to run on **Google Colab** due to the size of the KKBox datasets (several GB).
+
+### 1. Download the dataset from Kaggle
+KKBox dataset:
+https://www.kaggle.com/datasets/gcenachi/case-data-master-2024
+
+### 2. Upload the dataset to your Google Drive
+Create a folder in your Drive, for example:
+Place the parquet files inside the `data/` folder.
+
+### 3. Open the notebook on Google Colab
+Upload or open:
 ```bash
 notebooks/vFinal_case_datamaster.ipynb
 ```
+### 4. The notebook will automatically:
+- mount your Google Drive  
+- create the folder structure  
+- read the KKBox parquet files  
+- run preprocessing, feature engineering, and modeling  
 
-3. Run all notebook cells sequentially (Google Colab recommended).
-
-## Dataset Source
-KKBox Churn Dataset:  
-https://www.kaggle.com/datasets/gcenachi/case-data-master-2024
+No manual folder creation or local setup is required.
 
 ## Objective
-Demonstrate a complete workflow for churn prediction with emphasis on:
-- High recall for retention  
-- Interpretability of main drivers  
-- Practical feature engineering  
-- Realistic modeling aligned with business KPIs  
+Demonstrate a complete end-to-end workflow for churn prediction using supervised machine learning, with emphasis on:
+- High recall for customer retention
+- Interpretability of the main behavioral drivers
+- Practical feature engineering
+- Modeling aligned with business KPIs
 
 ## Notebook Contents
-- Data loading and cleaning  
-- Exploratory data analysis  
-- Custom feature engineering  
-- Gradient Boosting modeling  
-- Cross-validation  
-- Evaluation metrics  
-- Final insights and recommendations  
+## Notebook Contents
+- Data loading and preprocessing
+- Exploratory data analysis (EDA)
+- Behavioral and temporal feature engineering
+- Gradient Boosting model training
+- Cross-validation and hyperparameter tuning
+- Evaluation metrics (recall, precision, cost-impact)
+- Final insights and business recommendations 
 
 ## License
 MIT License.
