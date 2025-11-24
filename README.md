@@ -15,7 +15,7 @@ The notebook covers data ingestion, memory-efficient processing, exploratory ana
 notebooks/
 ├── vFinal_case_datamaster.ipynb
 
-data/                          # Place KKBox datasets here (not included)
+data/                          # Download the datasets in the link below
 ├── members.csv
 ├── transactions.csv
 ├── user_logs.csv
