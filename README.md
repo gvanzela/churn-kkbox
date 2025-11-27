@@ -1,4 +1,4 @@
-# Churn Prediction (KKBox Dataset) - Santander Data Masters Program
+# Churn Prediction (KKBox Dataset)
 
 ## Overview
 This project delivers a full churn-prediction pipeline built on the KKBox dataset.
